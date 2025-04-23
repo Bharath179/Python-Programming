@@ -1,0 +1,7 @@
+INFO:root:A New request Came:
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "C:\Users\Lenovo\PycharmProjects\pythonProject\filehandling\Ex1.py", line 12, in <module>
+    print(x/y)
+          ~^~
+ZeroDivisionError: division by zero

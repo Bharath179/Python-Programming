@@ -1,0 +1,9 @@
+{
+    "name": "Bharath",
+    "location": "India",
+    "phone": "1234567890",
+    "courses": [
+        "Python",
+        "API Testing"
+    ]
+}
