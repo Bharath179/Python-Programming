@@ -9,3 +9,5 @@ def freq_words():
         d[i]=d[i]+1
     print(d)
 freq_words()
+
+

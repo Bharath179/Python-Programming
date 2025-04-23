@@ -33,7 +33,8 @@ perioddrop=Select(driver.find_element(By.XPATH,"//select[@id='tenurePeriod']"))
 perioddrop.select_by_visible_text(per2)
 frquency=Select(driver.find_element(By.XPATH,"//select[@id='frequency']"))
 frquency.select_by_visible_text(fre)
-driver.find_element(By.XPATH,"//*[@id='fdMatVal']/div[2]/a[1]/img").click()
+time.sleep(5)
+driver.find_element(By.XPATH,"//a[@onclick='return getfdMatVal(this);']").click()
 
 act_mvalue=driver.find_element(By.XPATH,"//span[@id='resp_matval']//strong").text
 
@@ -45,7 +46,7 @@ if float(exp_mvalue)==float(act_mvalue):
 else:
     print("test failed")
     XLUtils.writeData(file, "Sheet1", r, 8, "Failed")
-    XLUtils.fillGreenColor(file, "Sheet1", r, 8)
+    XLUtils.fillRedColor(file, "Sheet1", r, 8)
     driver.find_element(By.XPATH,"//*[@id='fdMatVal']/div[2]/a[2]/img").click()
     time.sleep(2)
     driver.close()

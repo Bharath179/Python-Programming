@@ -12,15 +12,11 @@ def isPrime(num):
         else:
             # If there is no factor other than 1 return True in Flag
             flag = True
-    else:
-        # IF the number is less than 1 return False in Flag
-        flag = False
-    # Finally return the Final value of the flag
     return flag
 
 
 # Sample input
-num = 6
+num = 7
 # Check if the flag is True or False
 if (isPrime(num)):
     # If Flag is True print

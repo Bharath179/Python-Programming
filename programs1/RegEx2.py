@@ -3,21 +3,21 @@ import re
 # Functions of re module
 
 #1)match()===>It will check the given pattern at beginning of target string
-"""s=input("Enter pattern to match...")
+'''s=input("Enter pattern to match...")
 m=re.match(s,"abcdefgh")
 if m!=None:
     print("Match is available at the beginning of the string")
     print('start Index:{} and end Index:{}'.format(m.start(),m.end()))
 else:
-    print("Match is not available at the beginning of the string")
+    print("Match is not available at the beginning of the string")'''
 
 #2)fullmatch()===>It will check the given pattern to all of target string
-s=input("Enter pattern to match...")
-m=re.fullmatch(s,"abcdefgh")
+'''s=input("Enter pattern to match...")
+m=re.fullmatch(s,"hfswf")
 if m!=None:
     print("Full string matched")
 else:
-    print("Full string not matched")"""
+    print("Full string not matched")'''
 
 #3)search()===>It is used to check the given pattern in the target string
 '''s=input("Enter pattern to match...")
@@ -33,12 +33,12 @@ else:
 print(l)"""
 
 #5)sub()===>It will replace the every matched pattern with provided replacement
-"""s=re.sub("[a-z]","-","a7b9c5k8z")
-print(s)"""
+'''s=re.sub("[a-z]","-","a7b9c5k8z")
+print(s)'''
 
 #6)subn()===>It exactly same as sub but it can also returns no of replacements
-"""t=re.subn("[a-z]","#","a7b9c5k8z")
-print(t)"""
+'''t=re.subn("[a-z]","#","a7b9c5k8z")
+print(t)'''
 
 #7)split()===>It will split the given target string to particular pattern
 """t=re.split(",","Bharath,Kumar,Reddy,Vidya")
@@ -46,7 +46,7 @@ print(t)
 for l in t:
     print(l)"""
 
-"""import re
+'''import re
 
 # initialising string
 ini_string = "abcjw:, .@! eiw"
@@ -57,7 +57,7 @@ print("initial string : ", ini_string)
 result = re.sub('\W', '', ini_string)
 
 # printing final string
-print("final string", result)"""
+print("final string", result)'''
 
 import re
 

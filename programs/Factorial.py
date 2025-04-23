@@ -4,5 +4,7 @@ def fact(num):
         result=result*num
         num=num-1
     return result
-for i in range(1,6):
- print("The factorial of",i,"is:",fact(i))
+facto=fact(5)
+print(facto)
+'''for i in range(1,6):
+ print("The factorial of",i,"is:",fact(i))'''

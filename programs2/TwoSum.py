@@ -1,4 +1,3 @@
-
 '''def twosum(nums, target):
         left=0
         right=len(nums)-1
@@ -23,6 +22,8 @@ for i in range(0,len(a)):
 
 import random
 import string
+
+
 def generate_password(length=8):
     # Define the character set to generate the password from
     characters = string.ascii_letters + string.digits + string.punctuation
@@ -36,6 +37,3 @@ def generate_password(length=8):
 # Example usage:
 generated_password = generate_password()
 print("Generated Password:", generated_password)
-
-
-

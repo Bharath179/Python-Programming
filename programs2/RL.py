@@ -3,12 +3,12 @@
 print(list[::-1])'''
 
 #Approach 2
-list = [4, 5, 6, 7, 8, 9,]
-size=len(list)
-for i in range(0,size):
-    for j in range(i+1,size):
-     if list[i]<list[j]:
-         temp=list[i]
-         list[i]=list[j]
-         list[j]=temp
+lst = [4, 5, 6, 7, 8, 9]
+size = len(list)
+for i in range(0, size):
+    for j in range(i + 1, size):
+        if lst[i] < lst[j]:
+            temp = lst[i]
+            lst[i] = lst[j]
+            lst[j] = temp
     print(list[i])

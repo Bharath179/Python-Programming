@@ -21,6 +21,6 @@ searchbox.submit()
 
 searchlink=mywait.until(EC.presence_of_element_located((By.XPATH,"//h3[text()='Selenium']")))
 searchlink.click()
-(By.XPATH,"//h3[text()='Selenium']")
+#(By.XPATH,"//h3[text()='Selenium']")
 driver.quit()
 

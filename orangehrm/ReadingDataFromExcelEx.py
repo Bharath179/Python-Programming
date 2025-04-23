@@ -10,6 +10,6 @@ cols=sheet.max_column  #count no of columns in excel sheet
 #Reading all the rows and columns in excel sheet
 for r in range(1,rows+1):
     for c in range(1,cols+1):
-        print(sheet.cell(r,c).value,end='          ')
+        print(sheet.cell(r,c).value,end='       ')
         print()
 

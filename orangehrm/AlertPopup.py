@@ -14,3 +14,4 @@ alertwindow=driver.switch_to.alert
 print(alertwindow.text)
 #alertwindow.send_keys("welcome")
 alertwindow.accept()
+

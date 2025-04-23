@@ -32,8 +32,8 @@ if __name__ == "__main__":
     else:
         print("Sentence is not palindrome")'''
 
-d={"abc":101,
+'''d={"abc":101,
    "bca":201
    }
-print(d.get("abc"))
+print(d.get("abc"))'''
 

@@ -1,16 +1,16 @@
 def BinarySearch(list1,key):
     low=0
     high=len(list1)-1
-    Found=False
-    while low<=high and not Found:
+    flag=False
+    while low<=high and not flag:
         mid=(low+high)//2
         if key==list1[mid]:
-            Found=True
+            flag=True
         elif key>list1[mid]:
             low=mid+1
         else:
             high=mid-1
-    if Found==True:
+    if flag==True:
         print("Key is found")
     else:
         print("Key is not found")

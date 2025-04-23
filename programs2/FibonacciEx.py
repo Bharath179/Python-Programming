@@ -1,5 +1,4 @@
 # A series of numbers in which each number is sum of the two preceding numbers.
-
 n1=0
 n2=1
 print(n1)

@@ -1,7 +1,7 @@
 import re
 
 # Pre-Defined Character Classes
-"""matcher=re.finditer('\s',"a7b @k9z")
+matcher=re.finditer('\s',"a7b @k9z")
 for match in matcher:
     print(match.start(),"...",match.group())
 
@@ -20,7 +20,7 @@ for match in matcher:
 matcher=re.finditer('\D',"a7b @k9z")
 for match in matcher:
     print(match.start(),"...",match.group())
-"""
+
 matcher=re.finditer('.',"a7b @k9z")
 for match in matcher:
     print(match.start(),"...",match.group())

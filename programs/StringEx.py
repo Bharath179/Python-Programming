@@ -14,7 +14,7 @@ else:
 
 import re
 n=input("Enter email ID...")
-m=re.fullmatch("\w[a-z0-9_.]*@gmail[.]com",n)
+m=re.fullmatch("\w[a-z0-9]*@gmail[.]com",n)
 if m!=None:
     print("Email Id is valid")
 else:
