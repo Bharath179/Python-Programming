@@ -1,5 +1,4 @@
 
-
 class JSONValidator:
     @staticmethod
     def check_required_fields(item, required_fields):

@@ -7,9 +7,13 @@ BASE_URL = "http://localhost:3000/store"
 
 @pytest.fixture(scope="module")
 def response_data():
+    print(f"\nRequesting data from {BASE_URL}")
     response = requests.get(BASE_URL)
+    print(f"Status Code: {response.status_code}")
     assert response.status_code == 200
-    return response.json()
+    json_data = response.json()
+    print(f"Received data keys: {list(json_data.keys())}")
+    return json_data
 
 
 def test_books_key_exists(response_data):

@@ -2,6 +2,7 @@ import requests
 import pytest
 
 base_url = "https://reqres.in/api/users"
+
 # global-like variable for user ID
 user_id = None
 

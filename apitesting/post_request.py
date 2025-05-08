@@ -33,8 +33,8 @@ def test_get_user_by_id():
 def test_update_user():
     body = {
         "first_name": "Bharath",
-        "last_name": "Weaver",
-        "email": "bharath.weaver@reqres.in",
+        "last_name": "kumar",
+        "email": "bharath.kumar@reqres.in",
         "avatar": "https://reqres.in/img/faces/2-image.jpg"
     }
 
