@@ -1,11 +1,10 @@
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-class DemoAttribueVale():
+class DemoAttribueVale:
     def get_attribute_value(self):
         # Initialize the Chrome driver
         self.driver = webdriver.Chrome()
@@ -27,6 +26,7 @@ class DemoAttribueVale():
 
         # Close the browser
         self.driver.quit()
+
 
 # Create an instance of the class
 demo = DemoAttribueVale()

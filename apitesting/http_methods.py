@@ -44,3 +44,4 @@ def test_delete_user():
     response = requests.delete(f"{base_url}/{user_id}")
     assert response.status_code == 204
     print("User deleted successfully")
+ 

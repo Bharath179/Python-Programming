@@ -1,9 +1,9 @@
-# import csv
+# import comma_seperated_values
 #
-# # writing to csv file
-# with open('names.csv', 'w') as csvfile:
+# # writing to comma_seperated_values file
+# with open('names.comma_seperated_values', 'w') as csvfile:
 #     fields = ['Name', 'Branch']
-#     writer=csv.DictWriter(csvfile,fieldnames=fields)
+#     writer=comma_seperated_values.DictWriter(csvfile,fieldnames=fields)
 #     writer.writeheader()
 #     writer.writerow({'Name':'Bharath' ,'Branch':'Automation'})
 #     writer.writerow({'Name':'Vidya','Branch': 'SQL'})

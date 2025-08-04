@@ -55,8 +55,7 @@ demo.drop_downs()"""
 demo = DemoDropDown()
 demo.drop_downs()"""
 
-
-#check dropdown is multiple or not
+# check dropdown is multiple or not
 """class DemoDropDown():
     def drop_downs(self):
         self.driver = webdriver.Chrome()
@@ -74,14 +73,15 @@ demo.drop_downs()"""
 demo = DemoDropDown()
 demo.drop_downs()"""
 
-#select multiple options in multiselect dropdown
+
+# select multiple options in multiselect dropdown
 class DemoDropDown():
     def drop_downs(self):
         self.driver = webdriver.Chrome()
         self.driver.get("file:///C:/Users/Lenovo/Desktop/dropdown.html")
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
-        dayDropdown=Select(self.driver.find_element(By.ID, "cars"))
+        dayDropdown = Select(self.driver.find_element(By.ID, "cars"))
         if dayDropdown.is_multiple:
             print("The selected dropdown is multiple")
         else:
@@ -92,9 +92,11 @@ class DemoDropDown():
         time.sleep(1)
         dayDropdown.select_by_index(1)
         time.sleep(1)
-        selected_options=dayDropdown.all_selected_options
+        selected_options = dayDropdown.all_selected_options
         for options in selected_options:
             print(options.text)
         self.driver.quit()
+
+
 demo = DemoDropDown()
 demo.drop_downs()

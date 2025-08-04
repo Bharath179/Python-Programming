@@ -1,4 +1,4 @@
-import csv
+import comma_seperated_values
 import pytest
 import requests
 
@@ -6,7 +6,7 @@ import requests
 # Load CSV data from file
 def load_csv_data(filepath):
     with open(filepath, "r") as f:
-        return list(csv.DictReader(f))
+        return list(comma_seperated_values.DictReader(f))
 
 
 # Parametrized API test using the data

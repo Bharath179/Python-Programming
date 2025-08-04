@@ -40,10 +40,10 @@ with open('students.csv') as file:
         name,age,country=line.rstrip().split(",")
         print(f"{name} age is {age} and he is from {country}")
 
-'''import csv
+'''import comma_seperated_values
 
-with open('students.csv', 'w', newline='') as file:
-    writer = csv.writer(file)
+with open('students.comma_seperated_values', 'w', newline='') as file:
+    writer = comma_seperated_values.writer(file)
     field = ["name", "age", "country"]
 
     writer.writerow(field)

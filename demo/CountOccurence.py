@@ -2,7 +2,7 @@
 def countX(lst, x):
 	count = 0
 	for ele in lst:
-		if (ele == x):
+		if ele == x:
 			count = count + 1
 	return count
 
@@ -10,7 +10,7 @@ def countX(lst, x):
 # Driver Code
 lst = [8, 6, 8, 10, 8, 20, 10, 8, 8]
 x = 10
-print('{} has occurred {} times'.format(x,countX(lst, x)))
+print('{} has occurred {} times'.format(x, countX(lst, x)))
 #print(countX(lst,x))
 
 

@@ -8,6 +8,7 @@ class InvalidAgeError(Exception):
     def __str__(self):
         return f"{self.message}: {self.age}"
 
+
 class Person:
     def __init__(self, name, age):
         self.name = name  # Name of the person
@@ -21,6 +22,7 @@ class Person:
     def display_info(self):
         print("Name: %s" % self.name)
         print("Age: %s" % self.age)
+
 
 # Creating an object of Person class
 person1 = Person("John", 17)

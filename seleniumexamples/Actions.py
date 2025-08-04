@@ -34,18 +34,21 @@ demo.handle_actions()"""
 demo=DemoActions()
 demo.handle_actions()"""
 
-#Drag and Drop
-class DemoActions():
+
+# Drag and Drop
+class DemoActions:
     def handle_actions(self):
         self.driver = webdriver.Chrome()
         self.driver.get("https://www.myntra.com/")
         self.driver.maximize_window()
         self.driver.implicitly_wait(10)
-        drag=self.driver.find_element(By.XPATH,"//a[text()='Studio']")
-        drop=self.driver.find_element(By.XPATH,"//input[@placeholder='Search for products, brands and more']")
-        action=ActionChains(self.driver)
-        action.drag_and_drop(drag,drop).perform()
+        drag = self.driver.find_element(By.XPATH, "//a[text()='Studio']")
+        drop = self.driver.find_element(By.XPATH, "//input[@placeholder='Search for products, brands and more']")
+        action = ActionChains(self.driver)
+        action.drag_and_drop(drag, drop).perform()
         time.sleep(2)
         self.driver.quit()
-demo=DemoActions()
+
+
+demo = DemoActions()
 demo.handle_actions()

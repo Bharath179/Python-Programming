@@ -3,9 +3,9 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-#Alert Popup
+# Alert Popup
 
-"""class DemoPopups():
+"""class DemoPopups:
     def handle_popups(self):
         self.driver = webdriver.Chrome()
         self.driver.get("https://practice-automation.com/popups/")
@@ -22,9 +22,9 @@ from selenium.webdriver.common.by import By
 demo=DemoPopups()
 demo.handle_popups()"""
 
-#Conformation PopUp
+# Conformation PopUp
 
-"""class DemoPopups():
+"""class DemoPopups:
     def handle_popups(self):
         self.driver = webdriver.Chrome()
         self.driver.get("https://practice-automation.com/popups/")
@@ -41,9 +41,9 @@ demo.handle_popups()"""
 demo=DemoPopups()
 demo.handle_popups()"""
 
-#Notification PopUp
+# Notification PopUp
 
-"""class DemoPopups():
+"""class DemoPopups:
     def handle_popups(self):
         notification = webdriver.ChromeOptions()
         notification.add_argument("--disable-notifications")
@@ -54,13 +54,16 @@ demo.handle_popups()"""
 demo=DemoPopups()
 demo.handle_popups()"""
 
-#Authentation Popup
-class DemoPopups():
+
+# Authentation Popup
+class DemoPopups:
     def handle_popups(self):
         self.driver = webdriver.Chrome()
         self.driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth")
         self.driver.maximize_window()
         time.sleep(2)
         self.driver.quit()
-demo=DemoPopups()
+
+
+demo = DemoPopups()
 demo.handle_popups()

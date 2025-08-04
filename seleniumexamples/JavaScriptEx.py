@@ -4,7 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-class DemoOpenBrowser():
+class DemoOpenBrowser:
     def open_browser(self):
         self.driver = webdriver.Chrome()
         #self.driver.get("https://secure.yatra.com/social/common/yatra/signin.htm")
@@ -15,9 +15,11 @@ class DemoOpenBrowser():
         self.driver.execute_script("window.scrollBy(0,1000)")
         time.sleep(5)
         self.driver.execute_script("window.scrollTo(0, 0)")
-        continuebtn = self.driver.find_element(By.XPATH, "//button[text()='Continue']")
+        continue_btn = self.driver.find_element(By.XPATH, "//button[text()='Continue']")
         time.sleep(2)
-        self.driver.execute_script("arguments[0].click();",continuebtn)
+        self.driver.execute_script("arguments[0].click();", continue_btn)
         time.sleep(2)
-demo=DemoOpenBrowser()
+
+
+demo = DemoOpenBrowser()
 demo.open_browser()

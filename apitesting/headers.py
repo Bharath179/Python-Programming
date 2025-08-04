@@ -46,4 +46,3 @@ def test_path_query_params():
     assert response.status_code == 200
     print("Response Body:", response.json())
     print("Query params sent:", response.url)
-

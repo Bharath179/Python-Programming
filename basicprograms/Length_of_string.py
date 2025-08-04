@@ -79,8 +79,23 @@ try:
 except FileNotFoundError:
     print("The file 'files.zip' does not exist. Please make sure the file is created.")"""
 
-def number_to_string(num):
-    return str(num)
-print(type(number_to_string(123)))
+# def number_to_string(num):
+#     return str(num)
+# print(type(number_to_string(123)))
+
+def shift_char(s):
+    result=""
+    for char in s:
+        if 'A'<=char<='Z':
+            result+=chr(ord(char)+1)
+            result+='A'
+        elif '0'<=char<='9':
+            result += chr(ord(char) + 1)
+            result += '0'
+        else:
+            result+=char
+    return result
+print(shift_char("ABCZ129"))
+
 
 

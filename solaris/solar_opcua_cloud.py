@@ -1,11 +1,11 @@
 from opcua import Client
-import csv
+import comma_seperated_values
 import os
 
 
 def export_simulation_tags_to_csv():
     folder_path = "C:\\nodes"
-    csv_filename = os.path.join(folder_path, "simulation_tags.csv")
+    csv_filename = os.path.join(folder_path, "simulation_tags.comma_seperated_values")
 
     # Create the folder if it doesn't exist
     os.makedirs(folder_path, exist_ok=True)
@@ -29,7 +29,7 @@ def export_simulation_tags_to_csv():
 
         # Writing data to CSV File
         with open(csv_filename, mode='w', newline='') as csv_file:
-            writer = csv.writer(csv_file)
+            writer = comma_seperated_values.writer(csv_file)
             writer.writerow(["Browse Name", "Node ID", "Value"])
 
             print("Tags under 'Simulation':")

@@ -8,7 +8,7 @@ from opcua import Client
 OPCUA_SERVER_URL = "opc.tcp://10.1.54.231:51310/CogentDataHub/DataAccess"
 PARENT_NODE_ID = "ns=2;s=Default"
 MAX_DATA_SIZE_BYTES = 1024
-CSV_FILE = "opcua_browsed_data.csv"
+CSV_FILE = "opcua_browsed_data.comma_seperated_values"
 
 
 def read_all_children(parent_node_id):

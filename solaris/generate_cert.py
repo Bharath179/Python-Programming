@@ -1,6 +1,6 @@
 
 import asyncio
-import csv
+import comma_seperated_values
 from datetime import datetime
 from asyncua import Client, ua
 
@@ -57,9 +57,9 @@ async def main():
         results = await asyncio.gather(*[read_node_value(client, nid) for nid in variable_node_ids])
 
         # Save to CSV
-        csv_file = "realtime_opcua_data.csv"
+        csv_file = "realtime_opcua_data.comma_seperated_values"
         with open(csv_file, mode="w", newline="", encoding="utf-8") as f:
-            writer = csv.writer(f)
+            writer = comma_seperated_values.writer(f)
             writer.writerow(["NodeId", "Value", "DataType", "Timestamp"])
             writer.writerows(results)
 

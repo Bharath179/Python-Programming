@@ -4,7 +4,7 @@ from openpyxl.styles import Border, Side
 """path="C:\\Users\\Lenovo\\Desktop\\datadriven.xlsx"
 
 workbook=openpyxl.load_workbook(path)
-#workbook.get_sheet_by_name("sheet1")
+workbook.get_sheet_by_name("sheet1")
 sheet=workbook.active
 rows=sheet.max_row
 column=sheet.max_column
